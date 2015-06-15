@@ -9,13 +9,13 @@ Rails.application.routes.draw do
 
   root 'static_pages#home'
 
-  get "/aboutus", :to => 'static_pages#aboutus', :as => 'aboutus'
+  #get "/aboutus", :to => 'static_pages#aboutus', :as => 'aboutus'
 
-  get "/services", :to => 'static_pages#services', :as => 'services'
+  #get "/services", :to => 'static_pages#services', :as => 'services'
 
-  get "/carreers", :to => 'static_pages#carreers', :as => 'carreers'
+  #get "/carreers", :to => 'static_pages#carreers', :as => 'carreers'
 
-  get "/contactus", :to => 'static_pages#contactus', :as => 'contactus'
+  #get "/contactus", :to => 'static_pages#contactus', :as => 'contactus'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

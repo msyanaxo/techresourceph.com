@@ -37,47 +37,36 @@
     <![endif]-->
   </head>
   <body>
-
-    <div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
-        <div class="footer">
-          <p>&copy; TechResource 2015</p>
-          <a href="https://facebook.com/TechResourceInc"><i class="fa fa-facebook-square fa-2x"></i></a>
-          <a href="https://facebook.com/TechResourceInc"><i class="fa fa-linkedin-square fa-2x"></i></a>
-        </div>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <hr>
-        <a class="navbar-brand" href="#"></a>
+        <a class="navbar-brand" href="#">TechResource</a>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
-
-          <!--<ul class="nav navbar-nav">
+         <ul class="nav navbar-nav">
             <li><%= link_to 'Home', root_path %></li>
-            <li><%= link_to 'About Us', aboutus_path %></li>
-            <li><%= link_to 'Services', services_path %></li>
-            <li><%= link_to 'Carreers', carreers_path %></li>
-            <li><%= link_to 'Contact Us', contactus_path %></li>
-          </ul>
-        -->
-          <ul class="breadcrumb">
-            <li><%= link_to 'Home', root_path %></li>
-            <li><%= link_to 'About Us', aboutus_path %></li>
-            <li><%= link_to 'Services', services_path %></li>
-            <li><%= link_to 'Carreers', carreers_path %></li>
-            <li><%= link_to 'Contact Us', contactus_path %></li>
+            <li><%= link_to 'About Us', root_path(:anchor=>"about") %></li>
+            <li><%= link_to 'Services', root_path(:anchor=>"services") %></li>
+            <li><%= link_to 'Carreers', root_path(:anchor=>"carreers") %></li>
+            <li><%= link_to 'Contact Us', root_path(:anchor=>"contactus") %></li>
           </ul>
         </div>
       </div>
     </div>
-    <div class="page-header text-center">
-      <h1>TechResource</h1>
-   </div>
-   <div class="container">
-      <%= bootstrap_flash %>
-      <%= yield %>
-    </div> <!-- /container -->
+    <%= bootstrap_flash %>
+    <%= render "static_pages/intro" %>
+    <%= yield %>
+    <%= render "static_pages/aboutus" %>
+    <footer>
+      <div class="footer navbar-default" role="navigation">
+        <div class="container">
+          <p>&copy; TechResource 2015</p>
+          <a href="https://facebook.com/TechResourceInc"><i class="fa fa-linkedin-square fa-2x"></i></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
