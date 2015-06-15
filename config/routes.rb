@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
 
 
+  resources :admins
+
+  resources :positions
+
+  resources :applicants
+
   root 'static_pages#home'
 
   get "/aboutus", :to => 'static_pages#aboutus', :as => 'aboutus'

@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: TechResource_production
-  username: TechResource
+  database: TechResource
+  username: root
   password: <%= ENV['TECHRESOURCE_DATABASE_PASSWORD'] %>
