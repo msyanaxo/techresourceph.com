@@ -44,12 +44,11 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">TechResource</a>
+
+        <%= link_to 'TR', root_path, :class => 'navbar-brand' %>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
          <ul class="nav navbar-nav">
-            <li><%= link_to 'Home', root_path %></li>
-            <li><%= link_to 'About Us', root_path(:anchor=>"about") %></li>
-            <li><%= link_to 'Services', root_path(:anchor=>"services") %></li>
+            <li><%= link_to 'About Us', root_path(:anchor=>"aboutus") %></li>
             <li><%= link_to 'Carreers', root_path(:anchor=>"carreers") %></li>
             <li><%= link_to 'Contact Us', root_path(:anchor=>"contactus") %></li>
           </ul>
@@ -57,9 +56,10 @@
       </div>
     </div>
     <%= bootstrap_flash %>
-    <%= render "static_pages/intro" %>
     <%= yield %>
     <%= render "static_pages/aboutus" %>
+    <%= render "static_pages/carreers" %>
+    <%= render "static_pages/contactus" %>
     <footer>
       <div class="footer navbar-default" role="navigation">
         <div class="container">
