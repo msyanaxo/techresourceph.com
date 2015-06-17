@@ -14,6 +14,8 @@
  *= require_self
  */
 
+ /*text, icons = #2196F3 */
+
  #home {
   background: url(home.jpg) 50% 0 fixed;
    position: relative;
@@ -27,8 +29,8 @@
    height: 100%;
  }
  #aboutus {
-   background: url(about.png) 50% 0 fixed;
-   background-color: #FFF
+   /*background: url(b24.png) 50% 0 fixed; */
+   background-color: #006699;
    opacity: 0.6;
    filter: alpha(opacity=60); /* For IE8 and earlier */
    height: auto;
