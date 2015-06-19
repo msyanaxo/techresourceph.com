@@ -46,16 +46,21 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
+<<<<<<< HEAD
         <%= link_to "TR".html_safe, root_path, class: "navbar-brand" %>
           <!--
            <%= image_tag "tr_logo.png", :class => "img-circle",:height => 40, :align =>"middle"%>
          -->
 
+=======
+        <%= link_to "TR", root_path, class: "navbar-brand topnav" %>
+>>>>>>> ash/master
         <div class="navbar-collapse collapse navbar-responsive-collapse">
          <ul class="nav navbar-nav navbar-right">
             <li><%= link_to 'About Us', root_path(:anchor=>"aboutus") %></li>
             <li><%= link_to 'Careers', root_path(:anchor=>"carreers") %></li>
             <li><%= link_to 'Contact Us', root_path(:anchor=>"contactus") %></li>
+            <li><span class="bfh-countries" data-country="US" data-flags="true"></span></li>
           </ul>
         </div>
       </div>
