@@ -54,20 +54,33 @@
  }
  #aboutus {
    /*background: url(b24.png) 50% 0 fixed; */
-   background-color: #2196F3;
    height: auto;
    margin: 0 auto;
    width: 100%;
    position: relative;
    /* box-shadow: 0 0 50px rgba(0,0,0,0.8); */
-   padding: 100px 0;
-   color: #fff;
+   padding: 50px 0;
+   color: #2196F3;
  }
+ i{
+    font-size: 65px;
+  }
+  hr {
+      max-width: 60px;
+      border-color: #f05f40;
+      border-width: 3px;
+  }
+  hr.light {
+      border-color: #2196F3;
+  }
  #carreers {
    /*background: url(b24.png) 50% 0 fixed; */
+   background-color: #2196F3;
    height: auto;
    margin: 0 auto;
    width: 100%;
    position: relative;
    padding: 100px 0;
+   color: #fff;
  }
+
