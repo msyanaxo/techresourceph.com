@@ -1,12 +1,13 @@
+<br>
 <footer>
 <div class="container">
   <div class="row">
     <div class="col-md-6">
       <ol class="list-inline">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Carreers</a></li>
-      <li><a href="#">Contact Us</a></li>
+      <li><%= link_to 'Home', root_path %></li>
+      <li><%= link_to 'About Us', root_path(:anchor=>"aboutus") %></li>
+      <li><%= link_to 'Carreers', root_path(:anchor=>"carreers") %></li>
+      <li><%= link_to 'Contact Us', root_path(:anchor=>"contactus") %></li>
       <!--
       <li class="active">Carreers</li>
       <li class="active">Contact Us</li>-->
@@ -18,18 +19,21 @@
   </div>
   <div class="row ">
     <div class="col-md-6">
-    <span><b>Locations : </b>
-      <span class="glyphicon glyphicon-map-marker"</span> Makati City | <span class="glyphicon glyphicon-map-marker"</span> Clark, Pampanga
-      <span>
+    <span>Locations :</span>
+      <ul class="list-unstyled">
+        <li><span class="glyphicon glyphicon-map-marker"></span>Makati City</li>
+        </li><span class="glyphicon glyphicon-map-marker"></span> Clark, Pampanga</li>
+      </ul>
+
     </div>
     <div class="col-md-6">
       <div class="pull-right">
-          <span ><b>Social Links : </b>
-                <a href="https://www.facebook.com/TechResourceInc" ><i class="fa fa-facebook fa-fw"></i></a>
-                <a href="https://github.com/IronSummitMedia/startbootstrap"><i class="fa fa-github fa-fw"></i> </a>
-                  <a href="#" ><i class="fa fa-linkedin fa-fw"></i></a>
-            <span>
-            
+          <span><b>Social Links : </b> <span>
+          <ul class="list-inline list-unstyled">
+              <li><a href="https://www.facebook.com/TechResourceInc" ><i class="fa fa-facebook fa-fw"></i></a></li>
+              <li><a href="https://github.com/IronSummitMedia/startbootstrap"><i class="fa fa-github fa-fw"></i> </a></li>
+              <li><a href="#" ><i class="fa fa-linkedin fa-fw"></i></a></li>
+          </ul>
       </div>
     </div>
   </div>

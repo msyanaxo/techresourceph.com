@@ -14,8 +14,49 @@
  *= require_self
  */
 
- /*text, icons = #2196F3 */
+/*
+  css descriptions here
+*/
 
+ body,
+ html {
+     width: 100%;
+     height: 100%;
+ }
+ body,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+     font-weight: 700;
+ }
+ .topnav {
+     font-size: 25px;
+     color: white;
+ }
+
+ .navbar-default {
+    background-color: rgba(255,255,255, 0.3);
+    border:none;
+ }
+ .navbar-default .navbar-brand {
+   color:blue;
+   font-weight: bold;
+   color: #333333;
+ }
+ .navbar-default .navbar-brand:hover,
+ .navbar-default .navbar-brand:focus{
+   color:#2196F3;
+ }
+ .navbar-default .navbar-nav > li > a {
+   color: #333333;
+ }
+ .navbar-default .navbar-nav > li > a:hover,
+ .navbar-default .navbar-nav > li > a:focus {
+  color:#2196F3;
+ }
  #home {
    background: url(intro-bg.jpg) 50% 0 fixed;
    height: auto;
@@ -23,10 +64,8 @@
      width: 100%;
      position: relative;
      padding: 325px 0;
-  /* background: url(intro-bg.jpg) no-repeat center center; */
  }
  #home_layer{
-   background-color: rgba(30, 200, 16, 0.3);
    position: absolute;
    top: 0;
    width: 100%;
@@ -52,22 +91,34 @@
      border-top: 1px solid #f8f8f8;
      border-bottom: 1px solid rgba(0,0,0,0.2);
  }
- #aboutus {
-   /*background: url(b24.png) 50% 0 fixed; */
-   background-color: #2196F3;
+ #aboutus{
    height: auto;
-   margin: 0 auto;
-   width: 100%;
-   position: relative;
-   /* box-shadow: 0 0 50px rgba(0,0,0,0.8); */
-   padding: 100px 0;
-   color: #fff;
+     margin: 0 auto;
+     width: 100%;
+     position: relative;
+     padding: 100px 0;
  }
  #carreers {
-   /*background: url(b24.png) 50% 0 fixed; */
+   background-color: #3399FF;
    height: auto;
    margin: 0 auto;
-   width: 100%;
-   position: relative;
-   padding: 100px 0;
+     width: 100%;
+     position: relative;
+     padding: 100px 0;
  }
+ #contactus{
+   background: url(contact-bg.jpg);
+   background-repeat: no-repeat !important;
+   background-position: top center !important;
+   height:90%;
+   color: #f8f8f8;
+   margin: 0 auto !important;
+     width: 100%;
+     position: relative;
+     padding: 150px 0;
+
+ }
+ #map-container{
+    height: 500px;
+    width: 500px;
+}
